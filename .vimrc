@@ -9,7 +9,9 @@ let g:molokai_original = 1
 colorscheme molokai
 
 autocmd BufNewFile,BufEnter *.md set filetype=markdown
-autocmd FileType c,cpp setlocal softtabstop=4 shiftwidth=4 expandtab cursorline | autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufNewFile,BufEnter *.cpp set filetype=cpp
+autocmd BufNewFile,BufEnter *.c set filetype=c
+autocmd FileType c,cpp colorscheme molokai | setlocal softtabstop=4 shiftwidth=4 expandtab cursorline | autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType markdown,text colorscheme morning | setlocal spell spelllang=en foldcolumn=12 linebreak nonumber showtabline=0 laststatus=0 | highlight! link FoldColumn Normal | highlight NonText ctermfg=bg
 
 "set number hlsearch softtabstop=4 shiftwidth=4 expandtab backspace=2 incsearch cursorline
