@@ -1,0 +1,10 @@
+set t_Co=256
+syntax on
+set background=light
+hi Normal ctermfg=gray ctermbg=black
+set number hlsearch softtabstop=4 shiftwidth=4 expandtab backspace=2 smartindent mouse=a incsearch cursorline
+retab
+au BufNewFile *.cpp r ~/.vim/skeleton.cpp
+set noeb vb t_vb=
+nnoremap ; :
+autocmd BufWritePre * :%s/\s\+$//e
