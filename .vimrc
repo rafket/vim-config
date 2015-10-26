@@ -1,11 +1,8 @@
 set t_Co=256
 
 syntax on
-"set background=light
-"hi Normal ctermfg=gray ctermbg=black
 set hlsearch incsearch backspace=2 number
 let g:molokai_original = 1
-"let g:molokai_termcolors=256
 colorscheme molokai
 
 autocmd BufNewFile,BufEnter *.md set filetype=markdown
@@ -16,13 +13,8 @@ autocmd FileType cpp setlocal makeprg=clang\+\+\ %\ \-O2\ \-g
 autocmd FileType markdown,text colorscheme morning | setlocal spell spelllang=en foldcolumn=12 linebreak nonumber showtabline=0 laststatus=0 makeprg=pandoc\ \'%\'\ \-o\ \'%:r.pdf\' | highlight! link FoldColumn Normal | highlight NonText ctermfg=bg | nnoremap k gkh | nnoremap j gj
 autocmd FileType netrw colorscheme molokai
 
-
-"set number hlsearch softtabstop=4 shiftwidth=4 expandtab backspace=2 incsearch cursorline
-"set mouse=a
 filetype indent on
 retab
-"map <ScrollWheelUp> <Up> <Up> <Up>
-"map <ScrollWheelDown> <Down> <Down> <Down>
 au BufNewFile *.cpp r ~/.vim/skeleton.cpp
 set noeb vb t_vb=
 nnoremap ; :
