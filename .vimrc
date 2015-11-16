@@ -11,18 +11,13 @@ colorscheme molokai
 autocmd BufNewFile,BufEnter *.md set filetype=markdown
 autocmd BufNewFile,BufEnter *.cpp set filetype=cpp
 autocmd BufNewFile,BufEnter *.c set filetype=c
-autocmd FileType c,cpp,vim colorscheme molokai | setlocal softtabstop=4 shiftwidth=4 expandtab cursorline | autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType c,cpp,vim,bash colorscheme molokai | setlocal softtabstop=4 shiftwidth=4 expandtab cursorline | autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType cpp setlocal makeprg=clang\+\+\ %\ \-O2\ \-g
 autocmd FileType markdown,text colorscheme morning | setlocal spell spelllang=en foldcolumn=12 linebreak nonumber showtabline=0 laststatus=0 makeprg=pandoc\ \'%\'\ \-o\ \'%:r.pdf\' | highlight! link FoldColumn Normal | highlight NonText ctermfg=bg | nnoremap k gkh | nnoremap j gj
 autocmd FileType netrw colorscheme molokai
 
-
-"set number hlsearch softtabstop=4 shiftwidth=4 expandtab backspace=2 incsearch cursorline
-"set mouse=a
 filetype indent on
 retab
-"map <ScrollWheelUp> <Up> <Up> <Up>
-"map <ScrollWheelDown> <Down> <Down> <Down>
 au BufNewFile *.cpp r ~/.vim/skeleton.cpp
 set noeb vb t_vb=
 nnoremap ; :
@@ -33,3 +28,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+:set langmap=ΑA,ΒB,ΨC,ΔD,ΕE,ΦF,ΓG,ΗH,ΙI,ΞJ,ΚK,ΛL,ΜM,ΝN,ΟO,ΠP,QQ,ΡR,ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ,αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,ξj,κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
+
