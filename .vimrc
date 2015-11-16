@@ -1,11 +1,8 @@
 set t_Co=256
 
 syntax on
-"set background=light
-"hi Normal ctermfg=gray ctermbg=black
 set hlsearch incsearch backspace=2 number
 let g:molokai_original = 1
-"let g:molokai_termcolors=256
 colorscheme molokai
 
 autocmd BufNewFile,BufEnter *.md set filetype=markdown
