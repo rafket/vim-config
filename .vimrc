@@ -1,8 +1,11 @@
 set t_Co=256
 
 syntax on
+"set background=light
+"hi Normal ctermfg=gray ctermbg=black
 set hlsearch incsearch backspace=2 number
 let g:molokai_original = 1
+"let g:molokai_termcolors=256
 colorscheme molokai
 
 autocmd BufNewFile,BufEnter *.md set filetype=markdown
@@ -26,5 +29,4 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-:set langmap=ΑA,ΒB,ΨC,ΔD,ΕE,ΦF,ΓG,ΗH,ΙI,ΞJ,ΚK,ΛL,ΜM,ΝN,ΟO,ΠP,QQ,ΡR,ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ,αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,ξj,κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
-
+set keymap=greek_utf-8 iminsert=0 imsearch=-1
