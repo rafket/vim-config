@@ -1,4 +1,4 @@
-set t_Co=256
+set t_Co=256 wrap
 
 syntax on
 "set background=light
