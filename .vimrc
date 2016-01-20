@@ -18,7 +18,7 @@ autocmd FileType netrw colorscheme molokai
 
 filetype indent on
 retab
-au BufNewFile *.cpp r ~/.vim/skeleton.cpp
+au BufNewFile *.cpp 0r ~/.vim/skeleton.cpp
 set noeb vb t_vb=
 nnoremap ; :
 
