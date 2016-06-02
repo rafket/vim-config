@@ -5,6 +5,7 @@ hi Normal ctermfg=gray ctermbg=black
 set number hlsearch softtabstop=4 shiftwidth=4 expandtab backspace=2 smartindent mouse=a incsearch cursorline
 retab
 au BufNewFile *.cpp r ~/.vim/skeleton.cpp
+au FileType cpp setlocal makeprg=g\+\+\ %\ \-g\ \-std\=c\+\+11
 set noeb vb t_vb=
 nnoremap ; :
 autocmd BufWritePre * :%s/\s\+$//e
